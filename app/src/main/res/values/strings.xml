@@ -5,7 +5,7 @@ Devin Sterling
 GPA Calculator
 -->
 <resources>
-    <string name="app_name">GPA Calculator</string>
+    <string name="app_name">GPA_M50017969_Calculator</string>
     <string name="guide">Please enter the grades for different courses.\nGrades are <bold>numeric</bold>, ranging from <bold>0</bold> to <bold>100</bold>.</string>
     <string name="course_name">Course %1$d</string>
     <string name="grade_input">Enter Grade</string>

@@ -16,8 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String TAG = MainActivity.class.getSimpleName();
-    private STATE currentState = STATE.INPUT;
+    private STATE currentState = STATE.INPUT; // Application state, whether waiting for input or reset
     private LinearLayout courses; // Possesses user input/grades
     private Button buttonCalculate;
     private TextView textViewGPA;
@@ -41,9 +40,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        courses = (LinearLayout) findViewById(R.id.courses);
-        buttonCalculate = (Button) findViewById(R.id.btn_calculate);
-        textViewGPA = (TextView) findViewById(R.id.textGPA);
+        courses = findViewById(R.id.courses);
+        buttonCalculate = findViewById(R.id.btn_calculate);
+        textViewGPA = findViewById(R.id.textGPA);
 
         for (int i = 0; i < 5; i++) createCourse();
     }
@@ -131,9 +130,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clearGPA(View view) {
-        // Change Visibility
-        textViewGPA.setVisibility(View.GONE);
-
         requestState(STATE.INPUT);
 
         // Reset User Input
@@ -229,6 +225,9 @@ public class MainActivity extends AppCompatActivity {
                 // Change Listener
                 buttonCalculate.setText(R.string.calculate_gpa);
                 buttonCalculate.setOnClickListener(this::calculateGPA);
+
+                // Change Visibility from last state
+                textViewGPA.setVisibility(View.GONE);
 
                 // Replace color of previous root Background
                 findViewById(android.R.id.content).getRootView().setBackgroundColor(Color.parseColor("#FFFFFF"));
