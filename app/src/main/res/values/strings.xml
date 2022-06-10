@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Devin Sterling
+2022-06-06
+GPA Calculator
+-->
+<resources>
+    <string name="app_name">GPA Calculator</string>
+    <string name="guide">Please enter the grades for different courses.\nGrades are <bold>numeric</bold>, ranging from <bold>0</bold> to <bold>100</bold>.</string>
+    <string name="course_name">Course %1$d</string>
+    <string name="grade_input">Enter Grade</string>
+    <string name="add_course">Add Course</string>
+    <string name="calculate_gpa">Calculate GPA</string>
+    <string name="reset_gpa">Reset</string>
+    <string name="gpa_outcome">GPA for %1$d course(s) is %2$d</string>
+    <string name="err_gpa_empty">Course %1$d is empty. Please provide input.</string>
+    <string name="err_gpa_range">Grade for course %1$d must be from 0 to 100.</string>
+</resources>

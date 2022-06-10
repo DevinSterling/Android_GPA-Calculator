@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Devin Sterling
+2022-06-06
+GPA Calculator
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <path
+        android:pathData="M6,102 L102,6"
+        android:strokeWidth="10"
+        android:strokeColor="#808080" />
+    <path
+        android:pathData="M6,6 L102,102"
+        android:strokeWidth="10"
+        android:strokeColor="#808080" />
+
+</vector>

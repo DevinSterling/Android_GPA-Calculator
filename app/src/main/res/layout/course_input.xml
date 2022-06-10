@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Devin Sterling
+2022-06-06
+GPA Calculator
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/gpa_input_box">
+
+    <!-- Displays course number -->
+    <TextView style="@style/gpa_text" />
+
+    <!-- TextBox to enter current course grade -->
+    <EditText style="@style/gpa_input"
+        android:layout_width="200dp" />
+
+    <!-- Button to remove current course -->
+    <ImageButton style="@style/remove"
+        android:onClick="removeCourse"/>
+
+</LinearLayout>
